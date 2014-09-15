@@ -17,14 +17,14 @@ We would like you to use the following technologies:
 
 Plus anything that helps you. But please try to keep the stack as thin as possible, so don't use extra dependecies unless you *really* need them. Additional credit would be given for those who *will not use jQuery*.
 
-###Data
+### Server Side
+
+This assignment does not expect you to write any server-side code in most cases.
+
+### Data
 
 You would need to populate your app with financial data (stocks, prices and history prices for charting) from [Quandl](https://www.quandl.com/)'s **JSON API**. It's free and extreamly simple to use, so just [register](https://www.quandl.com/users/sign_up) and make sure you read [documentation](https://www.quandl.com/help/api). Further instructions would be given in widgets description section.
 
-
-###Server Side
-
-This assignment does not expect you to write any server-side code in most cases. Though you might need to have a data storage for 
 
 ###Source Code
 The quality of the code **matters** so please try not only to make it work but also make it readable and maintainable. We would also give much attention to you application's structure and code organization.
@@ -34,4 +34,10 @@ All the development has to be done in [GitHub](http://github.com/) or any other 
 You can work on this assignment as long as you wish but the _strict requitrement_ would be **frequent commits**. Once finished, please send to [it@cc.com.mt](mailto:it@cc.com.mt) link to your repository and link to the published version.
 
 ## Business Requirments
+
+### Main
+
+The main screen would be disaplying all widgets in the state that user left them last time or would be set to default view for each widget which should look like this:
+
+![Main](/mockups/main.png)
 
