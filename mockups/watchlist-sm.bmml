@@ -1,0 +1,67 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="816" measuredH="344" mockupW="482" mockupH="199">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::TitleWindow" x="334" y="145" w="264" h="199" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bottomheight>0</bottomheight>
+        <close>false</close>
+        <dragger>false</dragger>
+        <maximizeRestore>false</maximizeRestore>
+        <minimize>false</minimize>
+        <text>%20%20%20%20%20%20Watch%20List</text>
+        <topheight>37</topheight>
+        <value>0</value>
+        <verticalScrollbar>false</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::DataGrid" x="334" y="175" w="264" h="169" measuredW="229" measuredH="171" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <hLines>false</hLines>
+        <text>Symbol%2C%20Last%2C%20Change%2CActions%0A%5BAPPL%5D%2C398.67%2C-0.244%2C%20%0A%5BGOOG%5D%2C118.254%2C-2.568%2C%20%0A%5BKO%5D%2C%200.6502%2C-53.68%2C%20%0A%5BMSFT%5D%2C%2030.83%2C%20-12.356%2C%0A%5BF%5D%2C%2012.39%2C%20+5.368%2C%20</text>
+        <underline>false</underline>
+        <value>0</value>
+        <verticalScrollbar>false</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Icon" x="566" y="151" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>GearIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Icon" x="338" y="150" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>HLinesIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Icon" x="551" y="196" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CartIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Icon" x="551" y="227" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CartIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Icon" x="551" y="258" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CartIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Icon" x="551" y="289" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CartIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Icon" x="551" y="320" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CartIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::StickyNote" x="616" y="151" w="200" h="193" measuredW="109" measuredH="123" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>1.%20Instead%20of%20Name%20show%20product%20Symbol%0A2.%20Hide%20Volume%20column%0A3.%20Hide%20close%20and%20help%20buttons%20from%20header%0A4.%20Hide%20chart%20and%20details%20icon%0A5.%20Make%20Symbol%27s%20act%20as%20%27details%27%20button%0A6.%20make%20settings%20and%20%27buy%27%20buttons%20bigger</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
