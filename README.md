@@ -39,5 +39,5 @@ You can work on this assignment as long as you wish but the _strict requitrement
 
 The main screen would be disaplying all widgets in the state that user left them last time or would be set to default view for each widget which should look like this:
 
-![Main](/mockups/main.png)
+![Main](/mockups/main.png?raw=true)
 
