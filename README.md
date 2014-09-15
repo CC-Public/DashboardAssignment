@@ -1,4 +1,4 @@
-# User Dashboard
+# Dashboard
 
 ## Overview
 
@@ -15,9 +15,11 @@ You are to use the following frameworks and technologies:
 
 Plus anything that helps you. But please try to keep the stack as thin as possible, so don't use extra dependecies unless you *really* need them. Additional credit would be given for those who *will not use jQuery*.
 
-The quality of the code **matters** so please try not only to make it work but also make it readable and maintainable.
+The quality of the code **matters** so please try not only to make it work but also make it readable and maintainable. We would also give much attention to you application's structure and code organization.
 
-All the development has to be done in github or any other public source-code hosting service.
+All the development has to be done in [GitHub](http://github.com/) or any other public source-code hosting service.
 
 You can work on this assignment as long as you wish but the _strict requitrement_ would be **frequent commits**. Once finished, please send to [it@cc.com.mt](mailto:it@cc.com.mt) link to your repository and link to the published version.
+
+## Business Requirments
 
