@@ -57,7 +57,7 @@ Settings button should bring up the screen which would allow to set some basic s
 
 ### Widgets
 
-All widgets could be closed using the `x` button in top right corner which should be the same as hiding the widget in main settings screen. Each widget should have a help tooltip shoing when hovering over `?`. Each widget should also have a 'gear-button' which would bring up the settings screen for current instance.
+All widgets could be closed using the `x` button in top right corner which should be the same as hiding the widget in main settings screen. Widgets might have a help tooltip shown while hovering `?`. Some widgets would also  also have a 'gear-button' which would bring up the settings screen for current widget instance. All the settings screens shoul have 3 buttons: save (persist changes), cancel (discard changes) and reset (return widget to default state). 
 
 Hiding one of the widgets should cause the page to be reorganized respectively. No strict rules here just make it look nice on mobiles and tables regardless of how many widgets are being showed.
 
@@ -100,13 +100,13 @@ Or use [Yahoo's YQL](http://developer.yahoo.com/yql/console/?q=select%20*%20from
 
 #### Chart
 
-This widget should disaply product's price change within a certain period of time:
+Chart widgets could be created multiple times allowing to show data for different products. They should disaply it's product's price change within a certain period of time:
 
-![Chart](/mockups/chart?raw=true)
+![Chart](/mockups/chart.png?raw=true)
 
 Chart settings should give the possiblity to change the product and the time period:
 
-![Chart Settings](/mockups/chart-settings?raw=true)
+![Chart Settings](/mockups/chart-settings.png?raw=true)
 
 Time periods are specified in months. For example if today is 16th of September 2014 than the time period should show:
 
@@ -132,7 +132,9 @@ You can also use [Quandl API](https://www.quandl.com/help/api):
 
 #### Trade deed
 
-This widget should disaply latest update from 
+This widget should disaply latest updates about user activity:
+
+
 
 ## Contacts
 

@@ -82,7 +82,7 @@
     </control>
     <control controlID="28" controlTypeID="com.balsamiq.mockups::StickyNote" x="749" y="195" w="176" h="161" measuredW="109" measuredH="123" zOrder="15" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Should%20be%20autocompleted%20populating%20automaticly%20when%20user%20starts%20typing%20in%20the%20name%20of%20the%20product%20%28limit%20to%2010%20matches%29.</text>
+        <text>Should%20be%20autocomplete%20populated%20from%20the%20server%20when%20user%20starts%20typing%20in%20the%20name%20of%20the%20product%20%28limit%20to%2010%20matches%29.</text>
       </controlProperties>
     </control>
     <control controlID="29" controlTypeID="com.balsamiq.mockups::Arrow" x="621" y="132" w="122" h="62" measuredW="150" measuredH="100" zOrder="16" locked="false" isInGroup="-1">
