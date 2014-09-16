@@ -130,7 +130,7 @@ You can also use [Quandl API](https://www.quandl.com/help/api):
     http://www.quandl.com/api/v1/datasets/GOOG/NASDAQ_AAPL.json?trim_start=2013-09-16&trim_end=2014-09-16
 
 
-#### Trade deed
+#### Trade feed
 
 This widget should disaply latest user activity in real time. Stacking new activity-records in the top instead of replacing the whole feed. It will not have any settings or help buttons.
 
