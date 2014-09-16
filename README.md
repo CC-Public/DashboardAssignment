@@ -44,7 +44,7 @@ There are 3 types of widgets:
  * **Price Chart**. Price history for certain product
  * **Trade Feed**. Latest updates feed
 
-Each widget also has it's own settings (which would be described in more details below) and behaviour: _Trade Feed_ and _Watch List_ could be shown only once per dashboard while _Price Chart_ could be instantiated multiple times. 
+Each widget also has it's own settings (which would be described in more details below) and behaviour: _Trade Feed_ and _Watch List_ could be shown only once per dashboard while _Price Chart_ could be instantiated multiple times (see details below).
 
 ### Settings
 
@@ -78,7 +78,8 @@ Settings for the watchlist window should look like this:
 
 ![Watchlist Settings](/mockups/watchlist-settings.png?raw=true)
 
-Once user starts typing the product name in dropdown autocomplete:
+`Show Charts as new widgets` checkbox should control the **chart** button behaviour, allowing user either to disaplay only one chart-widget or have multiple widgets per each product.
+Once user starts typing inside 'Select Product' dropdown autocomplete should appear with results populated from the server:
 
 ![Watchlist Settings Select](/mockups/watchlist-settings-select.png?raw=true)
 
@@ -86,13 +87,52 @@ For the list of the products you can use [Markit On Demand Api](http://dev.marki
 
     http://dev.markitondemand.com/Api/v2/Lookup/json?input=app
 
+Adding the product to the watch list should be done by `+` button which should be active only when the product is selected. User also should have the ability to **reorder** items in the watch list which should be done by arrom-controls in the table.
+
 To get product details you can either use [markitondemand's Stock Quote API](http://dev.markitondemand.com/#stockquote):
 
     http://dev.markitondemand.com/Api/v2/Quote/json?symbol=AAPL
 
-Or use [YQL API](http://developer.yahoo.com/yql/console/?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20=%20'AAPL'&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys) from yahoo (which might be more flexible):
+Or use [Yahoo's YQL](http://developer.yahoo.com/yql/console/?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20=%20'AAPL'&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys) from yahoo (which might be more flexible):
 
     select * from yahoo.finance.quotes where symbol = 'AAPL'
+
+
+#### Chart
+
+This widget should disaply product's price change within a certain period of time:
+
+![Chart](/mockups/chart?raw=true)
+
+Chart settings should give the possiblity to change the product and the time period:
+
+![Chart Settings](/mockups/chart-settings?raw=true)
+
+Time periods are specified in months. For example if today is 16th of September 2014 than the time period should show:
+
+ * **1m** - from 16th of August 2014 till now
+ * **3m** - from 16th of June 2014 till now
+ * **12m** - from 16th of September 2013 till now
+
+To get historical prices you can either use [markitondemand's API](http://dev.markitondemand.com/#interactive):
+
+    "http://dev.markitondemand.com/Api/v2/InteractiveChart/json?parameters={"Normalized":false,"NumberOfDays":365,"DataPeriod":"Day","Elements":[{"Symbol":"AAPL","Type":"price","Params":["c"]}]}"
+
+Or [Yahoo's YQL](http://developer.yahoo.com/yql/console/?q=select%20*%20from%20yahoo.finance.historicaldata%20where%20symbol%20%3D%20%22YHOO%22%20and%20startDate%20%3D%20%222009-09-11%22%20and%20endDate%20%3D%20%222010-03-10%22&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys):
+
+    select * from yahoo.finance.historicaldata
+    where symbol = "APPL" and
+    startDate = "2009-09-11" and
+    endDate = "2010-03-10"
+
+You can also use [Quandl API](https://www.quandl.com/help/api):
+
+    http://www.quandl.com/api/v1/datasets/GOOG/NASDAQ_AAPL.json?trim_start=2013-09-16&trim_end=2014-09-16
+
+
+#### Trade deed
+
+This widget should disaply latest update from 
 
 ## Contacts
 

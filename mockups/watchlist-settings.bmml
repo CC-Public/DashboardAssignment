@@ -93,6 +93,7 @@
     </control>
     <control controlID="30" controlTypeID="com.balsamiq.mockups::CheckBox" x="407" y="349" w="240" h="22" measuredW="193" measuredH="22" zOrder="17" locked="false" isInGroup="-1">
       <controlProperties>
+        <state>selected</state>
         <text>Show%20Charts%20as%20new%20widgets</text>
       </controlProperties>
     </control>

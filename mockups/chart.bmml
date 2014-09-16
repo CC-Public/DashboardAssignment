@@ -1,0 +1,38 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1094" measuredH="446" mockupW="913" mockupH="341">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="196" y="146" w="684" h="274" measuredW="684" measuredH="275" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./chart-s.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::TitleWindow" x="181" y="105" w="714" h="341" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bottomheight>0</bottomheight>
+        <close>true</close>
+        <dragger>false</dragger>
+        <maximizeRestore>false</maximizeRestore>
+        <minimize>false</minimize>
+        <text>%20%20%20%20%20Apple%20prices%20-%2012%20months</text>
+        <value>0</value>
+        <verticalScrollbar>false</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::HelpButton" x="849" y="109" w="-1" h="-1" measuredW="18" measuredH="18" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Icon" x="821" y="110" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>GearIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Icon" x="187" y="110" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>ChartLineIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Tooltip" x="852" y="127" w="242" h="105" measuredW="251" measuredH="169" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>shows%20how%20product%20perfomed%20within%20given%20period.%20to%20change%20the%20product%20or%20time%20period%20go%20to%20settings</text>
+        <tooltipDirection>NW</tooltipDirection>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
