@@ -132,7 +132,9 @@ You can also use [Quandl API](https://www.quandl.com/help/api):
 
 #### Trade deed
 
-This widget should disaply latest updates about user activity:
+This widget should disaply latest user activity in real time. Stacking new activity-records in the top instead of replacing the whole feed. It will not have any settings or help buttons.
+
+![Trade Feed](/mockups/trade-feed.png?raw=true)
 
 
 
