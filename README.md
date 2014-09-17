@@ -19,7 +19,7 @@ Plus anything that helps you. But please try to keep the stack as thin as possib
 
 ### Data
 
-Within this assignment you would need to populate your app with financial data (stocks, prices and historical data for charting) which could come either from [Markit On Demand public API](http://dev.markitondemand.com/) in **JSON** format or from [Yahoo Finance](https://code.google.com/p/yahoo-finance-managed/wiki/YQLAPI). Both are extremely simple and does not require any registration. Further instructions would be given below. And once you can think of a better source provider you are more familliar with please feel free to use it.
+Within this assignment you would need to populate your app with financial data (stocks, prices and historical data for charting) which could come either from [Markit On Demand public API](http://dev.markitondemand.com/) in **JSON** format or from [Yahoo Finance](https://code.google.com/p/yahoo-finance-managed/wiki/YQLAPI). Both are extremely simple and do not require any registration. Further instructions would be given below. And once you can think of a better source provider you are more familliar with please feel free to use it.
 
 ###Source Code
 
@@ -27,7 +27,7 @@ The quality of the code **matters** so please try not only to make it work but a
 
 All the development has to be done in [GitHub](http://github.com/) or any other public source-code hosting service.
 
-You can work on this assignment as long as you wish, though the _strict requitrement_ would be **frequent and atomic commits** at least once per 1-2h of work. This means we won't accept you code if it would be pushed into repository in a single commit done on the last day. We need to see _how you progress_ as well so please let us see how you got there.
+You can work on this assignment as long as you wish, though the _strict requitrement_ would be **frequent and atomic commits** at least once per 1-2h of work. This means we won't accept you code if it would be pushed into repository in a single commit done on the last day. We need to see _how you progress_ as well.
 
 Once finished, please send the links to your repository and published version to [it@cc.com.mt](mailto:it@cc.com.mt).
 
@@ -136,7 +136,7 @@ This widget should disaply latest user activity in real time. Stacking new activ
 
 ![Trade Feed](/mockups/trade-feed.png?raw=true)
 
-To get data for this widget you will need to take adavanatage of [parse.com](https://www.parse.com/) backend application. To use it you will need to add reference for [parse JavaScript SDK](https://www.parse.com/docs/js_guide):
+To get data for this widget you will need to take advantage of [parse.com](https://www.parse.com/) backend application. To use it you will need to add reference for [parse JavaScript SDK](https://www.parse.com/docs/js_guide):
     
     <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.3.0.min.js"></script>
 
