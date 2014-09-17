@@ -192,7 +192,7 @@ You can also play around with the data via this web-client [http://tradefeed.par
 
 ## Design
 
-You can find PSD `design` [folder](/desig) in this repository. Try to follow them as much as possible though they are unfortunately not complete and will require some extrapolation. Please extract some general styles and elements like widget container, button, grid or drop-down list and extrapolate them on other applications screens.
+You can find PSD `design` [folder](/design) in this repository. Try to follow them as much as possible though they are unfortunately not complete and will require some extrapolation. Please extract some general styles and elements like widget container, button, grid or drop-down list and extrapolate them on other applications screens.
 
 ## Contacts
 
