@@ -188,7 +188,11 @@ To get real-time updates you would need to poll the server asking for new record
 Since the method actually produces random data on each request you might want to change `chance` parameter which controls the probability of returning new activity record for each user.
 Response form for is the same as in `GetUserActivities` method.
 
-You can also play around with the data via this web-client [http://tradefeed.parseapp.com/](http://tradefeed.parseapp.com/). You can also find source code for the back-end in the same GitHub repository [here](https://github.com/CC-Public/DashboardAssignment/tree/master/tradefeed/cloud). So if you feel like improving it or changing due to your needs, please feel free to fork it.
+You can also play around with the data via this web-client [http://tradefeed.parseapp.com/](http://tradefeed.parseapp.com/). You can also find source code for the back-end in the same GitHub repository [here](/tradefeed/cloud). So if you feel like improving it or changing due to your needs, please feel free to fork it.
+
+## Design
+
+You can find PSD `design` [folder](/desig) in this repository. Try to follow them as much as possible though they are unfortunately not complete and will require some extrapolation. Please extract some general styles and elements like widget container, button, grid or drop-down list and extrapolate them on other applications screens.
 
 ## Contacts
 
