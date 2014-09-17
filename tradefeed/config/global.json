@@ -1,0 +1,11 @@
+{
+    "applications": {
+        "TradeFeed": {
+            "applicationId": "clCmPyaT4LfjGsGjKuxGcF7Wt1CD6aE6urucljPA", 
+            "masterKey": "WyLmUEuHzAisfzuvigGFtuB96lKTPJnlFsnADXdh"
+        }, 
+        "_default": {
+            "link": "TradeFeed"
+        }
+    }
+}
