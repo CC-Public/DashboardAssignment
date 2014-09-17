@@ -70,3 +70,15 @@ function CheckGetNewUserActivityUpdates() {
     }
   });
 }
+
+function CheckGetUserActivities() {
+  msg('Calling GetUserActivities...');
+  Parse.Cloud.run('GetUserActivities', {limit:$('#limit').val()}, {
+    success: function(result) {
+      msg('<pre>' + JSON.stringify(result, null, 4) + '</pre>');
+    },
+    error: function(result) {
+      msg('Error: ' + result.error);
+    }
+  });
+}
