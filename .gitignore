@@ -182,4 +182,4 @@ UpgradeLog*.htm
 # Microsoft Fakes
 FakesAssemblies/
 
-tradefeed/config/global.json
+server/parse/tradefeed/config/global.json
