@@ -60,8 +60,8 @@ function GenerateUsersActivity(){
 }
 
 function CheckGetNewUserActivityUpdates() {
-  msg('Calling GetNewUserActivityUpdates..');
-  Parse.Cloud.run('GetNewUserActivityUpdates', {since: new Date()}, {
+  msg('Calling GetNewUserActivityUpdates...');
+  Parse.Cloud.run('GetNewUserActivityUpdates', {since: new Date(), chance:$('#chance').val()}, {
     success: function(result) {
       msg('<pre>' + JSON.stringify(result, null, 4) + '</pre>');
     },
