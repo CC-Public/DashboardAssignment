@@ -46,21 +46,24 @@ function GenerateUsersActivity(){
   	queryUser.find().then(function(users) {
   		for (var i = 0; i < users.length; i++) {
   			var userActivity = new UserActivity();
-  			queryPromises.push(userActivity.save({
+  			var p = userActivity.save({
   				user: users[i],
-  				action: GetRand(1), // Buy = 0, Sell = 1
+  				action: GetRand(10) > 5? 2 : 1, // Buy = 1, Sell = 2
   				amount: GetRand(1000),
-  				currency: currencies[GetRand(currencies.legnth - 1)],
+  				currency: currencies[GetRand(currencies.length - 1)],
   				price: GetRand(100) + GetRand(100) / 100,
-  				company: companies[GetRand(companies.legnth - 1)],
+  				company: companies[GetRand(companies.length - 1)],
   				date: new Date(),
-  			}).then(function() {recordsGenerated++;}));
+  			}).then(function() {
+  				recordsGenerated++;
+  				return Parse.Promise.as();
+  			});
+  			queryPromises.push(p);
   		}
-  	}).then(function (){
-		$.when(queryPromises).done(function () {
+  	}).then(function() {
+		Parse.Promise.when(queryPromises).then(function () {
 			msg(recordsGenerated + ' user activity records created');
-		}) 
-  		
+		});
   	});
 }
 
