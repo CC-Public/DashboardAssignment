@@ -175,7 +175,7 @@
     </control>
     <control controlID="39" controlTypeID="com.balsamiq.mockups::Label" x="833" y="206" w="-1" h="-1" measuredW="113" measuredH="21" zOrder="33" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>25%20sahres%20of%20Apple</text>
+        <text>25%20shares%20of%20Apple</text>
       </controlProperties>
     </control>
     <control controlID="40" controlTypeID="com.balsamiq.mockups::Label" x="833" y="229" w="-1" h="-1" measuredW="78" measuredH="21" zOrder="34" locked="false" isInGroup="-1">
@@ -264,7 +264,7 @@
     </control>
     <control controlID="59" controlTypeID="com.balsamiq.mockups::Label" x="833" y="389" w="-1" h="-1" measuredW="134" measuredH="21" zOrder="51" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>25%20sahres%20of%20Microsoft</text>
+        <text>25%20shares%20of%20Microsoft</text>
       </controlProperties>
     </control>
     <control controlID="60" controlTypeID="com.balsamiq.mockups::Label" x="833" y="412" w="-1" h="-1" measuredW="90" measuredH="21" zOrder="52" locked="false" isInGroup="-1">
@@ -306,7 +306,7 @@
     </control>
     <control controlID="68" controlTypeID="com.balsamiq.mockups::Label" x="833" y="491" w="-1" h="-1" measuredW="146" measuredH="21" zOrder="60" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>140%20sahres%20of%20Air%20France</text>
+        <text>140%20shares%20of%20Air%20France</text>
       </controlProperties>
     </control>
     <control controlID="69" controlTypeID="com.balsamiq.mockups::Label" x="833" y="514" w="-1" h="-1" measuredW="72" measuredH="21" zOrder="61" locked="false" isInGroup="-1">
