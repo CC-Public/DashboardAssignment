@@ -1,38 +1,19 @@
+var helper = require('cloud/shared.js');
 
-// Use Parse.Cloud.define to define as many cloud functions as you want.
-// For example:
-Parse.Cloud.define("GetUpdates", function(request, response) {
-	var Users = [
-    {name: 'Charlette', Id: 1,
-    {name: 'Hunter',
-    {name: 'Mahalia',
-    {name: 'Pamila',
-    {name: 'Diana',
-    {name: 'Lauran',
-    {name: 'Wilford',
-    {name: 'Dionna',
-    {name: 'Alissa',
-    {name: 'Leonarda',
-    {name: 'Alleen',
-    {name: 'Damon',
-    {name: 'Renaldo',
-    {name: 'Ricky',
-    {name: 'Bud',
-    {name: 'Martin',
-    {name: 'Tyisha',
-    {name: 'Magdalena',
-    {name: 'Rogelio',
-    {name: 'Candra',
-]
-	var result = [];
-	for(var i =0; i < 10; i++) {
-		result.push({
-			user: {
-				Id: Math.floor(Math.random()*11),
-				Name: Math.floor(Math.random()*11)
-			} 
-			userId: Math.floor(Math.random()*11),
-		})
-	}
-  	response.success(result);
+Parse.Cloud.define("GetNewUserActivityUpdates", function(request, response) {
+
+    var result = [];
+    var User = Parse.Object.extend("User");
+
+    var queryUser = new Parse.Query(User);
+    queryUser.find().then(function(users) {
+        for (var i = 0; i < users.length; i++) {
+            // generate updates randomly not for all users. The chance of getting
+            // updte for user will be 1% in this case
+            if(Math.random()<.01){
+                result.push(helper.GetRandomUserActivity(users[i]));
+            }
+        }
+        response.success(result);
+    });
 });
