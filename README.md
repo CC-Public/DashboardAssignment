@@ -2,20 +2,20 @@
 
 ## Overview
 
-To successfully pass this assignment you need to develop a single-page **JavaScript** application which would represent user dashboard with a number of customizable widgets persisting their state and settings across sessions. Application layout should adopt for different screens (tablets/phones) and run flawlessly on desktop (IE 9+, FF, Chrome, Safari) and most common mobile platforms (iOS/Android/WP). 
+To successfully pass this assignment you'll need to develop a single-page **JavaScript** application which would represent user dashboard with a number of customizable widgets persisting their state and settings across sessions. Application layout should adopt for different screens (tablets/phones) and run flawlessly on desktop (IE 9+, FF, Chrome, Safari) and most common mobile platforms (iOS/Android/WP). 
 
 ## Technical Requirements
 
 ###Frameworks and technologies:
 
-We would like you to use the following technologies:
+We would like you to use:
 
  * [AngularJS](http://angularjs.org). Show as much features as you can from angular but do not over complicate;
  * [TypeScript](http://www.typescriptlang.org/). Use classes and strong typing as much as possible;
- * [Twitter Bootstrap](http://getbootstrap.com/) + [Less CSS](http://lesscss.org/). Use responsive 12-column grid-system and write less instead of CSS;
+ * [Twitter Bootstrap](http://getbootstrap.com/) + [Less CSS](http://lesscss.org/). Use responsive 12-column grid-system;
  * [Protractor](http://angular.github.io/protractor/). Cover you application at least with necessary tests;
 
-Plus anything that helps you. But please try to keep the stack as thin as possible, so don't use extra dependencies unless you *really* need them. Additional credit would be given for those who *will not use jQuery*.
+Plus anything that helps you. But try to keep the stack as thin as possible, so don't use extra dependencies unless you *really* need them. Additional credit would be given for those who *will not use jQuery*.
 
 ### Data
 
