@@ -2,11 +2,11 @@
 
 ## Overview
 
-To successfully pass this assignment you'll need to develop a single-page **JavaScript** application which would represent user dashboard with a number of customizable widgets persisting their state and settings across sessions. Application layout should adopt for different screens (tablets/phones) and run flawlessly on desktop (IE 9+, FF, Chrome, Safari) and most common mobile platforms (iOS/Android/WP). 
+To successfully pass this assignment you'll need to develop a single-page **JavaScript** application which would represent user dashboard with a number of customizable widgets persisting their state and settings across sessions. Application layout should adopt for different screens (tablets/phones) and run flawlessly on desktop (IE 9+, FF, Chrome, Safari) and most common mobile platforms (iOS/Android/Widows Phone). 
 
 ## Technical Requirements
 
-###Frameworks and technologies:
+### Development Stack:
 
 We would like you to use:
 
@@ -95,8 +95,9 @@ To get product details you can either use [markitondemand's Stock Quote API](htt
 
 Or use [Yahoo's YQL](http://developer.yahoo.com/yql/console/?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20=%20'AAPL'&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys) from yahoo (which might be more flexible):
 
-    select * from yahoo.finance.quotes where symbol = 'AAPL'
-
+```sql
+select * from yahoo.finance.quotes where symbol = 'AAPL'
+```
 
 #### Chart
 
@@ -120,10 +121,12 @@ To get historical prices you can either use [markitondemand's API](http://dev.ma
 
 Or [Yahoo's YQL](http://developer.yahoo.com/yql/console/?q=select%20*%20from%20yahoo.finance.historicaldata%20where%20symbol%20%3D%20%22YHOO%22%20and%20startDate%20%3D%20%222009-09-11%22%20and%20endDate%20%3D%20%222010-03-10%22&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys):
 
-    select * from yahoo.finance.historicaldata
-    where symbol = "APPL" and
-    startDate = "2009-09-11" and
-    endDate = "2010-03-10"
+```sql
+select * from yahoo.finance.historicaldata
+where symbol = "APPL" and
+startDate = "2009-09-11" and
+endDate = "2010-03-10"
+```
 
 You can also use [Quandl API](https://www.quandl.com/help/api):
 
@@ -137,53 +140,62 @@ This widget should display latest user activity in real time. Stacking new activ
 ![Trade Feed](/mockups/trade-feed.png?raw=true)
 
 To get data for this widget you will need to take advantage of [parse.com](https://www.parse.com/) back-end application. To use it you will need to add reference for [parse JavaScript SDK](https://www.parse.com/docs/js_guide):
-    
-    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.3.0.min.js"></script>
+
+```html
+<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.3.0.min.js"></script>
+```
 
 In your code, before using any Parse classes, add the initialization call with Application ID and JavaScript key:
 
-    Parse.initialize("clCmPyaT4LfjGsGjKuxGcF7Wt1CD6aE6urucljPA", "cnAXZ6Gae05VR2kzZk5sQtN0HRJwM9Y90Mk2LFBt");
+```js
+Parse.initialize("clCmPyaT4LfjGsGjKuxGcF7Wt1CD6aE6urucljPA", "cnAXZ6Gae05VR2kzZk5sQtN0HRJwM9Y90Mk2LFBt");
+```
 
 To get the list of latest records you will need to call `GetUserActivities` method like this:
 
-    Parse.Cloud.run('GetUserActivities', {limit: 10}, {
-        success: function(result) {
-          // Process result array
-        },
-        error: function(result) {
-          // show error
-        }
-    });
-
-The response will be JSON in the following format:
-
-    {
-        "user": {
-            "firsname": "evelyn",
-            "lastname": "cole",
-            "pictureUrl": "http://api.randomuser.me/portraits/med/women/90.jpg",
-            // Unnecessary fields omitted
-        },
-        "action": 2,
-        "amount": 416,
-        "currency": "USD",
-        "price": 16.48,
-        "company": "Visalia",
-        "date": "2014-09-17T13:01:27.713Z"
+```js
+Parse.Cloud.run('GetUserActivities', {limit: 10}, {
+    success: function(result) {
+      // Process result array
+    },
+    error: function(result) {
+      // show error
     }
+});
+```
 
+The response will be JSON array in the following format:
+
+```json
+{
+    "user": {
+        "firsname": "evelyn",
+        "lastname": "cole",
+        "pictureUrl": "http://api.randomuser.me/portraits/med/women/90.jpg",
+        /* Unnecessary fields omitted */
+    },
+    "action": 2,
+    "amount": 416,
+    "currency": "USD",
+    "price": 16.48,
+    "company": "Visalia",
+    "date": "2014-09-17T13:01:27.713Z"
+}
+```
  * action = 1 is a **buy** 
  * action = 2 is a **sell**
 
 To get real-time updates you would need to poll the server asking for new records. There is a separate method for that - `GetNewUserActivityUpdates`. Use it something like this:
 
-    Parse.Cloud.run('GetNewUserActivityUpdates', {
-        since: new Date(),
-        chance: 0.05
-        }, {
-                success: function(result) { /* Process data */ },
-                error: function(result) { /* Show error */ }
-      });
+```js
+Parse.Cloud.run('GetNewUserActivityUpdates', {
+    since: new Date(),
+    chance: 0.05
+    }, {
+            success: function(result) { /* Process data */ },
+            error: function(result) { /* Show error */ }
+  });
+```
 
 Since the method actually produces random data on each request you might want to change `chance` parameter which controls the probability of returning new record per each user. Response format is the same as in `GetUserActivities` method.
 
