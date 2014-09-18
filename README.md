@@ -174,8 +174,7 @@ The response will be JSON array in the following containing following `UserActiv
     "user": {
         "firsname": "evelyn",
         "lastname": "cole",
-        "pictureUrl": "http://api.randomuser.me/portraits/med/women/90.jpg",
-        /* Unnecessary fields omitted */
+        "pictureUrl": "http://api.randomuser.me/portraits/med/women/90.jpg"
     },
     "action": 2,
     "amount": 416,
@@ -187,6 +186,8 @@ The response will be JSON array in the following containing following `UserActiv
 ```
  * action = 1 is a **buy** 
  * action = 2 is a **sell**
+ 
+Though there might be more fields you can ignore them for this assignment.
 
 To get real-time updates you would need to poll the server asking for new records. There is a separate method for that - `GetNewUserActivityUpdates`:
 
