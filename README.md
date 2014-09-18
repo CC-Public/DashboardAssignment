@@ -1,4 +1,4 @@
-# Dashboard
+# Dashboard Assignment
 
 ## Overview
 
@@ -10,20 +10,20 @@ To successfully pass this assignment you'll need to develop a single-page **Java
 
 We would like you to use:
 
- * [AngularJS](http://angularjs.org). Show as much features as you can from angular but do not over complicate;
- * [TypeScript](http://www.typescriptlang.org/). Use classes and strong typing as much as possible;
- * [Twitter Bootstrap](http://getbootstrap.com/) + [Less CSS](http://lesscss.org/). Use responsive 12-column grid-system;
- * [Protractor](http://angular.github.io/protractor/). Cover you application at least with necessary tests;
+ * [AngularJS](http://angularjs.org) - show as many angular features as you can but do not over complicate
+ * [TypeScript](http://www.typescriptlang.org/) - use classes and strong typing as much as possible. You can find definitions for common libraries [here](https://github.com/borisyankov/DefinitelyTyped)
+ * [Twitter Bootstrap](http://getbootstrap.com/) + [Less CSS](http://lesscss.org/) - use responsive 12-column grid-system
+ * [Protractor](http://angular.github.io/protractor/) - cover you application with necessary tests
 
 Plus anything that helps you. But try to keep the stack as thin as possible, so don't use extra dependencies unless you *really* need them. Additional credit would be given for those who *will not use jQuery*.
 
 ### Data
 
-Within this assignment you would need to populate your app with financial data (stocks, prices and historical data for charting) which could come either from [Markit On Demand public API](http://dev.markitondemand.com/) in **JSON** format or from [Yahoo Finance](https://code.google.com/p/yahoo-finance-managed/wiki/YQLAPI). Both are extremely simple and do not require any registration. Further instructions would be given below. And once you can think of a better source provider you are more familiar with please feel free to use it.
+Within this assignment you would need to populate your app with financial data (stocks, prices and historical data for charting) which you can get in JSON format either from [Markit On Demand public API](http://dev.markitondemand.com/)  or from [Yahoo Finance](https://code.google.com/p/yahoo-finance-managed/wiki/YQLAPI). Both are extremely simple and do not require any registration. Further instructions would be given below. Actually if you can think of a better data provider for stocks and quotes or the one you are more familiar with please feel free to use it.
 
 ###Source Code
 
-The quality of the code **matters** so please try not only to make it work but also make it readable and maintainable. We would also give much attention to you application's structure and code organization.
+The quality of the code **matters** so please try not only to make it work but also make it readable and maintainable. We would also give much attention to you application's structure and architecture.
 
 All the development has to be done in [GitHub](http://github.com/) or any other public source-code hosting service.
 
@@ -40,9 +40,10 @@ The main screen would be displaying all widgets in the state that user left them
 ![Main](/mockups/main.png?raw=true)
 
 There are 3 types of widgets:
+
  * **Watch List**. Shows the latest data on the selected products
  * **Price Chart**. Price history for certain product
- * **Trade Feed**. Latest updates feed
+ * **Trade Feed**. Latest user activity updates feed
 
 Each widget also has it's own settings (which would be described in more details below) and behavior: _Trade Feed_ and _Watch List_ could be shown only once per dashboard while _Price Chart_ could be instantiated multiple times (see details below).
 
