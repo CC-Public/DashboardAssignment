@@ -10,8 +10,8 @@ To successfully pass this assignment you'll need to develop a single-page **Java
 
 We would like you to use:
 
- * [AngularJS](http://angularjs.org) - show as many angular features as you can but do not over complicate
- * [TypeScript](http://www.typescriptlang.org/) - use classes and strong typing as much as possible. You can find definitions for common libraries [here](https://github.com/borisyankov/DefinitelyTyped)
+ * [AngularJS](http://angularjs.org) - use as many angular features as you can (services, dependency injection, directives) but do not over complicate
+ * [TypeScript](http://www.typescriptlang.org/) - use classes, inheritance and strong typing as much as possible. You can find definitions for common libraries [here](https://github.com/borisyankov/DefinitelyTyped)
  * [Twitter Bootstrap](http://getbootstrap.com/) + [Less CSS](http://lesscss.org/) - use responsive 12-column grid-system
  * [Protractor](http://angular.github.io/protractor/) - cover you application with necessary tests
 
@@ -30,6 +30,7 @@ All the development has to be done in [GitHub](http://github.com/) or any other 
 You can work on this assignment as long as you wish, though the _strict requirement_ would be **frequent and atomic commits** at least once per 1-2 hours of work. This means we won't accept you code if it would be pushed into repository in a single commit done on the last day. We need to see _how you progress_ as well.
 
 Once finished, please send the links to your repository and published version to [it@cc.com.mt](mailto:it@cc.com.mt).
+
 
 ## Business Requirements
 
@@ -60,7 +61,7 @@ Settings button should bring up the screen which would allow to set some basic s
 
 All widgets could be closed using the `x` button in top right corner which should be the same as hiding the widget in main settings screen. Widgets might have a help tool-tip shown while hovering `?`. Some widgets would also  also have a 'gear-button' which would bring up the settings screen for current widget instance. All the settings screens should have 3 buttons: save (persist changes), cancel (discard changes) and reset (return widget to default state). 
 
-Hiding one of the widgets should cause the page to be reorganized respectively. No strict rules here just make it look nice on mobiles and tables regardless of how many widgets are being showed.
+Hiding one of the widgets should cause the page to be reorganized respectively. No strict rules here just make it look nice on mobiles and tables regardless of how many widgets are being shown.
 
 #### Watch List
 
@@ -70,25 +71,26 @@ This is how watch list should look like in desktop browser:
 
 ![Watch list ](/mockups/watchlist.png?raw=true)
 
-**Chart** button should add a new Price Chart widget to dashboard with prices for selected product. **Buy** button should redirect to 'Buy product' page (which would be a stub reading something like _"Buy Product Id={APPL}"_). **Details** page should be also a sub page reading _"Details for Product Id={APPL}"_.
-For devices with screen width less than `748px` the screen should look like this:
+**Chart** button should add a new Price Chart widget to dashboard with prices for selected product. **Buy** button should redirect to 'Buy product' page (which should be a separate stub page reading _"Buy Product Id={APPL}"_). **Details** page should be also a sub page reading _"Details for Product Id={APPL}"_.
+For devices with screen width less than `748px` watch list should look like this:
 
 ![Watch list ](/mockups/watchlist-sm.png?raw=true)
 
-Settings for the watch list window should look like this:
+Settings screen for this widget should look like this:
 
 ![Watch list Settings](/mockups/watchlist-settings.png?raw=true)
 
 `Show Charts as new widgets` checkbox should control the **chart** button behavior, allowing user either to display only one chart-widget or have multiple widgets per each product.
+
 Once user starts typing inside 'Select Product' drop-down auto-complete should appear with results populated from the server:
 
 ![Watch list Settings select ](/mockups/watchlist-settings-select.png?raw=true)
 
-For the list of the products you can use [Markit On Demand API](http://dev.markitondemand.com/#companylookup). **JSON** lookup example for companies with the name matching string _'app'_:
+For the list of the products you can use [Markit On Demand API](http://dev.markitondemand.com/#companylookup).  Here is lookup example for companies with the name matching the string _'app'_:
 
     http://dev.markitondemand.com/Api/v2/Lookup/json?input=app
 
-Adding the product to the watch list should be done by `+` button which should be active only when the product is selected. User also should have the ability to **reorder** items in the watch list which should be done by arrow-controls in the table.
+Adding the product to the watch list should be done by `+` button which should be active only when the product is selected. User also should have the ability to **reorder** items in with arrow-controls in the table.
 
 To get product details you can either use [markitondemand's Stock Quote API](http://dev.markitondemand.com/#stockquote):
 
@@ -100,17 +102,17 @@ Or use [Yahoo's YQL](http://developer.yahoo.com/yql/console/?q=select%20*%20from
 select * from yahoo.finance.quotes where symbol = 'AAPL'
 ```
 
-#### Chart
+#### Price Chart
 
-Chart widgets could be created multiple times allowing to show data for different products. They should display it's product's price change within a certain period of time:
+Chart show historical prices for a certain product within given time period. This widget be created multiple time allowing to see prices for different products on the same dashboard.
 
 ![Chart](/mockups/chart.png?raw=true)
 
-Chart settings should give the possibility to change the product and the time period:
+Chart settings should give the possibility to change product and the time period:
 
 ![Chart Settings](/mockups/chart-settings.png?raw=true)
 
-Time periods are specified in months. For example if today is 16th of September 2014 than the time period should show:
+Time periods are specified in months. For example if today is 16th of September 2014 than the prices should be shown:
 
  * **1m** - from 16th of August 2014 till now
  * **3m** - from 16th of June 2014 till now
@@ -136,23 +138,23 @@ You can also use [Quandl API](https://www.quandl.com/help/api):
 
 #### Trade feed
 
-This widget should display latest user activity in real time. Stacking new activity-records in the top instead of replacing the whole feed. It will not have any settings or help buttons.
+This widget should display latest user activity in real time. Stacking new records in the top instead of replacing the whole feed. Trade Feed will not have any settings or help buttons.
 
 ![Trade Feed](/mockups/trade-feed.png?raw=true)
 
-To get data for this widget you will need to take advantage of [parse.com](https://www.parse.com/) back-end application. To use it you will need to add reference for [parse JavaScript SDK](https://www.parse.com/docs/js_guide):
+To get data for this widget you will need to use [parse.com](https://www.parse.com/) back-end application. First add reference for [parse JavaScript SDK](https://www.parse.com/docs/js_guide):
 
 ```html
 <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.3.0.min.js"></script>
 ```
 
-In your code, before using any Parse classes, add the initialization call with Application ID and JavaScript key:
+Before using any Parse classes, add the initialization call with Application ID and JavaScript key:
 
 ```js
 Parse.initialize("clCmPyaT4LfjGsGjKuxGcF7Wt1CD6aE6urucljPA", "cnAXZ6Gae05VR2kzZk5sQtN0HRJwM9Y90Mk2LFBt");
 ```
 
-To get the list of latest records you will need to call `GetUserActivities` method like this:
+Now you can get the list of latest records. Call `GetUserActivities` method like this:
 
 ```js
 Parse.Cloud.run('GetUserActivities', {limit: 10}, {
@@ -165,7 +167,7 @@ Parse.Cloud.run('GetUserActivities', {limit: 10}, {
 });
 ```
 
-The response will be JSON array in the following format:
+The response will be JSON array in the following containing following `UserActivity` objects:
 
 ```json
 {
@@ -186,7 +188,7 @@ The response will be JSON array in the following format:
  * action = 1 is a **buy** 
  * action = 2 is a **sell**
 
-To get real-time updates you would need to poll the server asking for new records. There is a separate method for that - `GetNewUserActivityUpdates`. Use it something like this:
+To get real-time updates you would need to poll the server asking for new records. There is a separate method for that - `GetNewUserActivityUpdates`:
 
 ```js
 Parse.Cloud.run('GetNewUserActivityUpdates', {
@@ -198,13 +200,14 @@ Parse.Cloud.run('GetNewUserActivityUpdates', {
   });
 ```
 
-Since the method actually produces random data on each request you might want to change `chance` parameter which controls the probability of returning new record per each user. Response format is the same as in `GetUserActivities` method.
+Since the method actually produces random data on each request you might want to change `chance` parameter which controls the probability of returning new record per each user. Response format is the same as in `GetUserActivities` method above.
 
-There is a web-client [http://tradefeed.parseapp.com/](http://tradefeed.parseapp.com/) where you can test back-end. You can also find source code [here](/tradefeed). 
+There is a web-client [http://tradefeed.parseapp.com/](http://tradefeed.parseapp.com/) where you can test back-end and add generate some test-data. You can also find source code both for client and server [here](/tradefeed). 
 
 ## Design
 
-You can find PSDs in `design` [folder](/design). Try to follow them as much as possible though they are unfortunately not complete and will require some creativity. Please extract some general styles and elements like widget container, button, grid or drop-down list and extrapolate them on other applications screens.
+You can find PSDs in `design` [folder](/design). Try to follow them as much as possible though unfortunately they are not complete and will require some creativity. Please extract some general styles and elements like widget container, button, grid or drop-down list and extrapolate them on other applications screens.
+We want to judge your HTML/CSS skills as well so make it neat and clean.
 
 ## Contacts
 
