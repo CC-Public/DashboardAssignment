@@ -1,0 +1,466 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"re",
+				"request"
+			],
+			[
+				"user",
+				"users"
+			],
+			[
+				"use",
+				"users"
+			],
+			[
+				"UserA",
+				"UserActivity"
+			],
+			[
+				"ins",
+				"Installations"
+			],
+			[
+				"res",
+				"results"
+			],
+			[
+				"in",
+				"installations"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"queryU",
+				"queryUserFavourite"
+			],
+			[
+				"test",
+				"testItem"
+			],
+			[
+				"User",
+				"UserFavourite"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 10996,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "tradefeed/public/script.js",
+			"settings":
+			{
+				"buffer_size": 2337,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "tradefeed/public/index.html",
+			"settings":
+			{
+				"buffer_size": 1297,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "DashboardAssignment.sublime-project",
+			"settings":
+			{
+				"buffer_size": 73,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"prev",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"MarkPre",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"syn ma",
+				"Set Syntax: Markdown"
+			],
+			[
+				"mark c",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"ma",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"packas",
+				"Package Control: Install Package"
+			],
+			[
+				"Package:",
+				"Package Control: Install Package"
+			],
+			[
+				"Markdownpre",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"Markdown Pre",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"package:",
+				"Package Control: Install Package"
+			],
+			[
+				"Packa",
+				"Package Control: Install Package"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Dev/DashboardAssignment",
+		"/C/Dev/DashboardAssignment/tradefeed",
+		"/C/Dev/DashboardAssignment/tradefeed/config",
+		"/C/Dev/DashboardAssignment/tradefeed/public"
+	],
+	"file_history":
+	[
+		"/C/Users/dmitryparfenchik/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/dmitryparfenchik/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/dmitryparfenchik/AppData/Roaming/Sublime Text 3/Packages/MarkdownEditing/Bold and Italic Markers.tmPreferences",
+		"/C/Dev/ParseTestApp/TestApp/cloud/main.js",
+		"/C/Dev/DashboardAssignment/tradefeed/cloud/main.js",
+		"/C/Dev/DashboardAssignment/tradefeed/public/script.js",
+		"/C/Dev/DashboardAssignment/tradefeed/public/index.html",
+		"/C/Dev/DashboardAssignment/tradefeed/public/shared.js",
+		"/C/Dev/ParseTestApp/script.js",
+		"/C/Dev/DashboardAssignment/tradefeed/cloud/shared.js",
+		"/C/Dev/ProtractorTest/index.html",
+		"/C/Dev/DashboardAssignment/.gitignore",
+		"/C/Dev/ParseTestApp/TestApp/common/common.js",
+		"/C/Dev/ParseTestApp/index.html",
+		"/C/Dev/DashboardAssignment/server/public/index.html",
+		"/C/Dev/DashboardAssignment/README.md",
+		"/C/Dev/DashboardAssignment/server/Parse/TradeFeed/cloud/main.js",
+		"/C/Dev/DashboardAssignment/server/Parse/index.html",
+		"/C/Dev/DashboardAssignment/server/Parse/script.js",
+		"/C/Dev/ProtractorTest/script.js",
+		"/C/Dev/ProtractorTest/tests/spec.js",
+		"/C/Dev/ProtractorTest/tests/config.js",
+		"/C/Dev/DashboardAssignment/tradefeed/config/global.json",
+		"/C/Dev/DashboardAssignment/test.json",
+		"/C/Dev/DashboardAssignment/test",
+		"/C/Users/dmitryparfenchik/AppData/Roaming/Sublime Text 3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/C/Users/dmitryparfenchik/AppData/Roaming/Sublime Text 3/Packages/User/MultiMarkdown.sublime-settings",
+		"/C/Users/dmitryparfenchik/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Dev/ProtractorTest/style.css",
+		"/C/Dev/ProtractorTest/app/index.html",
+		"/C/Dev/ProtractorTest/app/script.js",
+		"/C/Dev/ProtractorTest/config.js",
+		"/C/Dev/ProtractorTest/app/style.css",
+		"/C/Dev/ProtractorTest/spec.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"We need to see how you",
+			"We need to see how you ",
+			"We need to see how you",
+			"\n      <input id='chance' value='0.05'/> (x 100%) chance of updates per user in\n      <code>GetNewUserActivityUpdates</code>\n      <button onclick=\"CheckGetNewUserActivityUpdates()\">Check</button>\n      <br/>",
+			">\n",
+			"\nfunction GetRand(max) {\n	return Math.floor(Math.random()*(max + 1));\n}",
+			"legnth",
+			"[];\n",
+			"<!DOCTYPE html>\n<html>\n\n  <head>\n  <title>Trade Feed Backend</title>\n  </head>\n\n  <body>\n  <section>\n    <h1>Trade Feed Backend</h1>\n    <button>Generate Users</button>\n    </section>\n    <script>\n    <script src=\"script.js\"></script>\n  </body>\n</html>",
+			"\n<",
+			"\n    function msg(text) {\n      $('#msg').html(text);\n    }",
+			"UserFavorites",
+			"\n      queryTestItem.find().then(function (results) => {\n        results.forEach(function (result) {\n          p.push(result.destroy());\n        }\n      });",
+			");\n",
+			"\n    <button onclick='CreateStubUsers()' id='creteStubUsersBtn'>Create Stub Users</button>\n    <p id='createStubUsersMsg' style=\"display:none\">Users Are created</p>\n    <br/>",
+			";\n",
+			"\n    function hideCreateUserStubBtn() {\n      $('#creteStubBtn').addAttr('disabled','disabled');\n      $('#createStubMsg').show();\n    }",
+			"extend",
+			"request"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"length"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10996,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								372,
+								372
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "tradefeed/public/script.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2337,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "tradefeed/public/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1297,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								33,
+								33
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "DashboardAssignment.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 73,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								38,
+								38
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"project": "DashboardAssignment.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
