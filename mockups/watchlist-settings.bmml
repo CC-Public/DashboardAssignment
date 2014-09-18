@@ -26,7 +26,7 @@
     </control>
     <control controlID="17" controlTypeID="com.balsamiq.mockups::DataGrid" x="407" y="151" w="257" h="172" measuredW="204" measuredH="171" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Name%2C%20Symbol%2C%20%20%2C%0AApple%2C%20APPL%2C%20%20%20%2C%20%20%20%20%20%20%20%20%0AGoogle%2C%20GOOG%2C%20%20%20%20%2C%20%20%20%20%20%0AMicrosoft%2C%20MSFT%2C%20%20%20%20%2C%20%20%0ACoca%20Cola%2C%20KO%2C%20%20%20%20%20%20%2C%20%20%0AFord%2C%20F%2C%20%20%20%20%2C</text>
+        <text>Name%2C%20Symbol%2C%20%20%2C%0AApple%2C%20AAPL%2C%20%20%20%2C%20%20%20%20%20%20%20%20%0AGoogle%2C%20GOOG%2C%20%20%20%20%2C%20%20%20%20%20%0AMicrosoft%2C%20MSFT%2C%20%20%20%20%2C%20%20%0ACoca%20Cola%2C%20KO%2C%20%20%20%20%20%20%2C%20%20%0AFord%2C%20F%2C%20%20%20%20%2C</text>
       </controlProperties>
     </control>
     <control controlID="18" controlTypeID="com.balsamiq.mockups::Icon" x="647" y="108" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="5" locked="false" isInGroup="-1">

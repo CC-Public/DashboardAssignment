@@ -37,7 +37,7 @@
     <control controlID="6" controlTypeID="com.balsamiq.mockups::ComboBox" x="407" y="112" w="225" h="-1" measuredW="118" measuredH="78" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <state>up</state>
-        <text>Select%20Product%0AApple%2C%20APPL%0AMicrosoft%2C%20MSFT%0A...</text>
+        <text>Select%20Product%0AApple%2C%20AAPL%0AMicrosoft%2C%20MSFT%0A...</text>
       </controlProperties>
     </control>
     <control controlID="7" controlTypeID="com.balsamiq.mockups::Icon" x="581" y="293" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="7" locked="false" isInGroup="-1">

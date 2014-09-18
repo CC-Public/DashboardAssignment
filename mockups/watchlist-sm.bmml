@@ -17,7 +17,7 @@
       <controlProperties>
         <align>left</align>
         <hLines>false</hLines>
-        <text>Symbol%2C%20Last%2C%20Change%2CActions%0A%5BAPPL%5D%2C398.67%2C-0.244%2C%20%0A%5BGOOG%5D%2C118.254%2C-2.568%2C%20%0A%5BKO%5D%2C%200.6502%2C-53.68%2C%20%0A%5BMSFT%5D%2C%2030.83%2C%20-12.356%2C%0A%5BF%5D%2C%2012.39%2C%20+5.368%2C%20</text>
+        <text>Symbol%2C%20Last%2C%20Change%2CActions%0A%5BAAPL%5D%2C398.67%2C-0.244%2C%20%0A%5BGOOG%5D%2C118.254%2C-2.568%2C%20%0A%5BKO%5D%2C%200.6502%2C-53.68%2C%20%0A%5BMSFT%5D%2C%2030.83%2C%20-12.356%2C%0A%5BF%5D%2C%2012.39%2C%20+5.368%2C%20</text>
         <underline>false</underline>
         <value>0</value>
         <verticalScrollbar>false</verticalScrollbar>

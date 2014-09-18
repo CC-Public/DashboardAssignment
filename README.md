@@ -13,7 +13,7 @@ We would like you to use:
  * [AngularJS](http://angularjs.org) - use as many angular features as you can (services, dependency injection, directives) but do not over complicate
  * [TypeScript](http://www.typescriptlang.org/) - use classes, inheritance and strong typing as much as possible. You can find definitions for common libraries [here](https://github.com/borisyankov/DefinitelyTyped)
  * [Twitter Bootstrap](http://getbootstrap.com/) + [Less CSS](http://lesscss.org/) - use responsive 12-column grid-system
- * [Protractor](http://angular.github.io/protractor/) - cover you application with necessary tests
+ * [Protractor](http://angular.github.io/protractor/) - cover your application with necessary tests
 
 Plus anything that helps you. But try to keep the stack as thin as possible, so don't use extra dependencies unless you *really* need them. Additional credit would be given for those who *will not use jQuery*.
 
@@ -46,7 +46,7 @@ There are 3 types of widgets:
  * **Price Chart**. Price history for certain product
  * **Trade Feed**. Latest user activity updates feed
 
-Each widget also has it's own settings (which would be described in more details below) and behavior: _Trade Feed_ and _Watch List_ could be shown only once per dashboard while _Price Chart_ could be instantiated multiple times (see details below).
+Each widget also has its own settings (which would be described in more details below) and behavior: _Trade Feed_ and _Watch List_ could be shown only once per dashboard while _Price Chart_ could be instantiated multiple times (see details below).
 
 ### Settings
 
@@ -71,7 +71,7 @@ This is how watch list should look like in desktop browser:
 
 ![Watch list ](/mockups/watchlist.png?raw=true)
 
-**Chart** button should add a new Price Chart widget to dashboard with prices for selected product. **Buy** button should redirect to 'Buy product' page (which should be a separate stub page reading _"Buy Product Id={APPL}"_). **Details** page should be also a sub page reading _"Details for Product Id={APPL}"_.
+**Chart** button should add a new Price Chart widget to dashboard with prices for selected product. **Buy** button should redirect to 'Buy product' page (which should be a separate stub page reading _"Buy Product Id={AAPL}"_). **Details** page should be also a sub page reading _"Details for Product Id={AAPL}"_.
 For devices with screen width less than `748px` watch list should look like this:
 
 ![Watch list ](/mockups/watchlist-sm.png?raw=true)
@@ -126,7 +126,7 @@ Or [Yahoo's YQL](http://developer.yahoo.com/yql/console/?q=select%20*%20from%20y
 
 ```sql
 select * from yahoo.finance.historicaldata
-where symbol = "APPL" and
+where symbol = "AAPL" and
 startDate = "2009-09-11" and
 endDate = "2010-03-10"
 ```
